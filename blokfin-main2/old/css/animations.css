@@ -1,0 +1,18 @@
+/*                  */
+/*      INDEX       */
+/*                  */
+
+@keyframes wipe-enter {
+  0% {
+    transform: opacity(0);
+  }
+  50% {
+    transform: opacity(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cards-1-animation {
+    animation: wipe-enter 1s 1;
+  }
+}
