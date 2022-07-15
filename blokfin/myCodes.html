@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokfin - Kodlarım</title>
+
+    
+
+        
+        
+    
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+            rel="stylesheet">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+            media="screen">
+        
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+            rel="stylesheet">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+            integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+            rel="stylesheet">
+            
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/myCodes.css">
+        
+        <link rel="stylesheet" href="./css/responsive.css">
+
+    <style>
+
+       
+
+        /* TOOLBAR */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+body {
+  background-color: #f5f6f8;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+.sidebar-navigation {
+  display: inline-block;
+  height: 100%;
+  position: fixed;
+
+  min-height: 100vh;
+  width: 80px;
+  background-color: #313443;
+  float: left;
+}
+.sidebar-navigation ul {
+  text-align: center;
+  color: white;
+}
+.sidebar-navigation ul li {
+  padding: 28px 0;
+  cursor: pointer;
+  transition: all ease-out 120ms;
+}
+.sidebar-navigation ul li i {
+  display: block;
+  font-size: 24px;
+  transition: all ease 450ms;
+}
+
+.first-section li:hover {
+  color: #98d7ec;
+}
+
+.sidebar-navigation ul li .tooltip {
+  display: inline-block;
+  position: absolute;
+  background-color: #313443;
+  padding: 8px 15px;
+  border-radius: 3px;
+  margin-top: -26px;
+  left: 90px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.sidebar-navigation ul li .tooltip:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+.first-section ul li:hover {
+  background-color: #22252e;
+}
+
+.fa-b {
+  color: rgb(255, 255, 255);
+}
+
+.sidebar-navigation ul li:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebar-navigation ul li.active {
+  background-color: #22252e;
+}
+.sidebar-navigation ul li.active i {
+  color: #98d7ec;
+}
+
+.tooltip {
+  color: aliceblue;
+}
+
+.sidebar-navigation ul li {
+  color: #d9defb;
+}
+
+.fa-right li:hover {
+  color: #e45050;
+}
+
+.fa-co li:hover {
+  color: #f2f4f8;
+}
+
+.fa-in li:hover {
+  color: #f2f4f8;
+}
+
+.fa-ca li:hover {
+  color: #f2f4f8;
+}
+
+.fa-ge li:hover {
+  color: #f2f4f8;
+}
+
+
+/* ICONS */
+
+.settings:hover {
+  fill: #313443;
+}
+
+.tooltip {
+    z-index: 1;
+}
+
+
+
+   
+
+
+
+
+
+        
+    </style>
+
+</head>
+
+<body style="overflow: auto;">
+
+
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <nav class="sidebar-navigation" >
+
+        <ul class="logo">
+            <a href="index.html">
+                <li class="">
+                    <i class="fa-solid fa-b fa-2xl"></i>
+                    <span class="tooltip">Anasayfa</span>
+                </li>
+            </a>
+        </ul>
+
+        <ul class="first-section">
+
+
+
+            <a href="myCodes.html">
+                <li class="">
+                    <i class="fa-solid fa-code"></i>
+                    <span class="tooltip">Kodlarım</span>
+                </li>
+            </a>
+
+            <a href="usage.html">
+                <li>
+                    <i class="fa-regular fa-file"></i>
+                    <span class="tooltip">Kullanım</span>
+                </li>
+            </a>
+
+            <a href="plans.html">
+                <li>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span class="tooltip">Planlar </span>
+                </li>
+            </a>
+
+            <a href="settings.html">
+                <li class="">
+                    <i class="fa-regular fa-sun"></i>
+                    <span class="tooltip">Ayarlar</span>
+                </li>
+            </a>
+        </ul>
+
+        <ul class="fa-right" style="margin-top: 13rem;">
+            <a href="index.html">
+                <li class="">
+                    <i class="fa-solid fa-right-from-bracket fa-10x"></i>
+                    <span class="tooltip">Çıkış Yap</span>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <h2>Son Projeler</h2>
+
+        <div class="code-row" style="margin-top: -2.5%;">
+
+            <div class="code" id="code1" onmouseover="dots1up()" onmouseleave="dots1down()">
+
+                
+
+                <div class="foto">
+
+                    
+                  <div class="img"> 
+                    <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                </div>
+                    <div class="dots dots-normal" id="dots1" onmouseover="dots1purple()" onmouseleave="dots1white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+
+
+                
+
+
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+
+            <div class="code" id="code2" onmouseover="dots2up()" onmouseleave="dots2down()">
+            
+            
+            
+                <div class="foto">
+            
+            
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots2" onmouseover="dots2purple()" onmouseleave="dots2white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+            
+            
+            
+            
+            
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+
+            <div class="code" id="code3" onmouseover="dots3up()" onmouseleave="dots3down()">
+            
+            
+            
+                <div class="foto">
+            
+            
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots3" onmouseover="dots3purple()" onmouseleave="dots3white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+            
+            
+            
+            
+            
+            <div class="text">
+                <p >Kod</p>
+                <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+            </div>
+            </div>
+
+            <div class="code" id="code4" onmouseover="dots4up()" onmouseleave="dots4down()">
+            
+            
+            
+                <div class="foto">
+            
+            
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots4" onmouseover="dots4purple()" onmouseleave="dots4white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+            
+            
+            
+            
+            
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+
+           
+            
+
+
+        </div>
+
+        <div class="code-row">
+        
+            <div class="code" id="code5" onmouseover="dots5up()" onmouseleave="dots5down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots5" onmouseover="dots5purple()" onmouseleave="dots5white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code6" onmouseover="dots6up()" onmouseleave="dots6down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots6" onmouseover="dots6purple()" onmouseleave="dots6white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code7" onmouseover="dots7up()" onmouseleave="dots7down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots7" onmouseover="dots7purple()" onmouseleave="dots7white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code8" onmouseover="dots8up()" onmouseleave="dots8down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots8" onmouseover="dots8purple()" onmouseleave="dots8white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+
+    
+
+        <br><br><br><br><br></br>
+
+        <h2>En Son Paylaşılanlar</h2>
+        
+        <div class="code-row" style="margin-top: -2.5%;">
+        
+            <div class="code" id="code9" onmouseover="dots9up()" onmouseleave="dots9down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots9" onmouseover="dots9purple()" onmouseleave="dots9white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code10" onmouseover="dots10up()" onmouseleave="dots10down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots10" onmouseover="dots10purple()" onmouseleave="dots10white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code11" onmouseover="dots11up()" onmouseleave="dots11down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots11" onmouseover="dots11purple()" onmouseleave="dots11white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code12" onmouseover="dots12up()" onmouseleave="dots12down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots12" onmouseover="dots12purple()" onmouseleave="dots12white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        
+        <div class="code-row">
+        
+            <div class="code" id="code13" onmouseover="dots13up()" onmouseleave="dots13down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots13" onmouseover="dots13purple()" onmouseleave="dots13white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code14" onmouseover="dots14up()" onmouseleave="dots14down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots14" onmouseover="dots14purple()" onmouseleave="dots14white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code15" onmouseover="dots15up()" onmouseleave="dots15down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots15" onmouseover="dots15purple()" onmouseleave="dots15white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code16" onmouseover="dots16up()" onmouseleave="dots16down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots16" onmouseover="dots16purple()" onmouseleave="dots16white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+
+        <br><br><br><br><br></br>
+        
+        <h2>En Çok Beğenilenler </h2>
+        
+        <div class="code-row" style="margin-top: -2.5%;">
+        
+            <div class="code" id="code17" onmouseover="dots17up()" onmouseleave="dots17down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots17" onmouseover="dots17purple()" onmouseleave="dots17white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code18" onmouseover="dots18up()" onmouseleave="dots18down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots18" onmouseover="dots18purple()" onmouseleave="dots18white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code19" onmouseover="dots19up()" onmouseleave="dots19down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots19" onmouseover="dots19purple()" onmouseleave="dots19white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code20" onmouseover="dots20up()" onmouseleave="dots20down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots20" onmouseover="dots20purple()" onmouseleave="dots20white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        
+        <div class="code-row">
+        
+            <div class="code" id="code21" onmouseover="dots21up()" onmouseleave="dots21down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots21" onmouseover="dots21purple()" onmouseleave="dots21white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code22" onmouseover="dots22up()" onmouseleave="dots22down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots22" onmouseover="dots22purple()" onmouseleave="dots22white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code23" onmouseover="dots23up()" onmouseleave="dots23down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots23" onmouseover="dots23purple()" onmouseleave="dots23white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code24" onmouseover="dots24up()" onmouseleave="dots24down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots24" onmouseover="dots24purple()" onmouseleave="dots24white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+
+        <br><br><br><br><br></br>
+        
+        <h2>Beğendiklerim </h2>
+        
+        <div class="code-row" style="margin-top: -2.5%;">
+        
+            <div class="code" id="code25" onmouseover="dots25up()" onmouseleave="dots25down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots25" onmouseover="dots25purple()" onmouseleave="dots25white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.80rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code26" onmouseover="dots26up()" onmouseleave="dots26down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots26" onmouseover="dots26purple()" onmouseleave="dots26white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code27" onmouseover="dots27up()" onmouseleave="dots27down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots27" onmouseover="dots27purple()" onmouseleave="dots27white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code28" onmouseover="dots28up()" onmouseleave="dots28down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots20" onmouseover="dots28purple()" onmouseleave="dots28white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        
+        <div class="code-row">
+        
+            <div class="code" id="code29" onmouseover="dots29up()" onmouseleave="dots29down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots29" onmouseover="dots29purple()" onmouseleave="dots29white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code30" onmouseover="dots30up()" onmouseleave="dots30down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots30" onmouseover="dots30purple()" onmouseleave="dots30white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code31" onmouseover="dots31up()" onmouseleave="dots31down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-normal" id="dots31" onmouseover="dots31purple()" onmouseleave="dots31white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+            <div class="code" id="code32" onmouseover="dots32up()" onmouseleave="dots32down()">
+        
+        
+        
+                <div class="foto">
+        
+        
+                    <div class="img">
+                        <img src="./images/Shooter, Hanger ve Elevator.jpg" alt="">
+                    </div>
+                    <div class="dots dots-edge" id="dots32" onmouseover="dots32purple()" onmouseleave="dots32white()">
+                        <i class="fa-solid fa-ellipsis fa-xl "></i>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+                <div class="text">
+                    <p >Kod</p>
+                    <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.3rem;">İDeal</p>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        
+
+
+
+
+    <div id="context-menu">  
+
+        
+
+        <div class="header" style="margin-top: 2%;">
+            <h2>Kod</h2>
+            <p style="font: 550 0.8rem/0  'Open Sans', sans-serif; margin-top: 1.2rem; ">   İDeal</p>
+        </div>
+
+        
+        <hr>
+
+        <div class="item mt-4">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Tam Ekran Göster
+            
+            
+
+        </div>
+
+   
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+
+        
+    
+
+
+
+        <div class="item">
+            <i class="fa-regular fa-copy"></i> Kopyala
+        </div>
+
+        <div class="item">
+            <i class="fa-solid fa-download"></i> İndir
+        </div>
+
+        <div class="item">
+            <i class="fa-solid fa-share"></i> Paylaş
+        </div>
+
+        <div class="item trash" style="margin-bottom: 8%;">
+            <i class="fa-solid fa-trash"></i> Çöp Kutusuna Taşı
+        </div>
+    </div>
+
+
+
+
+        
+
+
+        
+
+      
+
+    </div>
+
+    
+
+
+<script src="https://kit.fontawesome.com/07eb9b2213.js" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+<script src="js/myCodes.js"></script>
+
+<script src="jquery-3.6.0.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

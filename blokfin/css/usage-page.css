@@ -1,0 +1,171 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+
+ a {
+
+     color: rgb(166, 134, 196);
+     font-weight: 700;
+
+ }
+
+ body {
+     overflow: auto;
+ }
+
+
+
+ .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+
+ .works_box {
+     margin-top: 30px;
+     background: #2ca799;
+     margin-bottom: 30px;
+     padding: 0px 30px 30px 30px;
+     border-radius: 0px 60px 0px 60px;
+     transition: ease-in all 0.5s;
+     width: 19.5rem;
+     height: 20rem;
+ }
+
+ .works_box h4 {
+     font-size: 25px;
+     line-height: 30px;
+     font-weight: bold;
+     color: #fff;
+     background: #26594D;
+     width: 80px;
+     text-align: center;
+     border-radius: 50px;
+     height: 80px;
+     padding-top: 26px;
+     margin-left: -50px;
+     margin-top: -30px;
+     position: absolute;
+ }
+
+ .works_box h5 {
+     font-size: 1.5rem;
+     text-align: center;
+     padding-top: 2rem;
+     margin-bottom: -2rem;
+
+ }
+
+ .works_box p {
+     color: #fff;
+     font-size: 17px;
+     line-height: 33px;
+     text-align: center;
+     padding-top: 60px;
+ }
+
+ #white_bg:hover.works_box {
+     background: #9DD1CC !important;
+     border-radius: 40px 0px 40px 0px;
+     transition: ease-in all 0.5s;
+ }
+
+ #white_bg:hover.works_box p {
+     color: #000;
+ }
+
+ #white_bg:hover.works_box h4 {
+     background: #092501;
+ }
+
+
+
+
+
+
+ .works_box h4 {
+     margin-left: -42px;
+
+
+ }
+
+
+
+ .fa-right {
+     margin-top: 250%;
+ }
+
+ .container {
+    margin-top: 4rem;
+ }
+
+ .above-heading {
+     margin-bottom: -4%;
+     color: #26594D;
+ }
+
+.opening {
+    margin-left: 8%;
+}
+
+.opening h1 {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    text-align: center;
+    color: #333;
+    letter-spacing: -0.2px;
+    font: 700 2.5rem/3rem 'Open Sans ', sans-serif;
+}
+
+.opening p {
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: 1.5;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font: 400 1.125rem/1.75rem 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+.gif-container {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-bottom: 6%;
+    padding-left: 0.5rem;
+    padding-right: 5rem;
+    background-color: #f3f6fc;
+    letter-spacing: -0.2px;
+    font: 400 1.125rem/1.75rem 'Open Sans', sans-serif;
+    border: 1rem solid #f3f6fc;
+    border-radius: 1.5%;
+}
+
+.gif-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gif img {
+    width: 120%;
+    border: 3px solid white;
+    border-radius: 3%;
+}
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    padding-left: 4rem;
+}
+
+
+
+ 
